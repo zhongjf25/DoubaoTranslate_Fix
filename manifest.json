@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "豆包翻译文本选择修复",
+  "version": "1.0",
+  "description": "修复豆包AI翻译文本无法自由选中的问题",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["*://*.doubao.com/*"],
+      "js": ["content-script.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
